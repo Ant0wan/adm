@@ -29,6 +29,7 @@ chown antoine:antoine recap
 
 printf "\nPermissions: 4(r) + 2(w) + 1(x)\n" | lolcat
 printf "\nor: u+rwx,g+rwx,o+rwx\n" | lolcat
+printf "    u-rwx,g-rwx,o-rwx\n" | lolcat
 printf "\nchmod 0777 essentials.sh\n"
 chmod 0777 essentials.sh
 
