@@ -16,3 +16,17 @@ systemctl list-dependencies --no-pager
 
 printf "\nstat /etc/\n"
 stat /etc/ | lolcat
+
+printf "\ngroups\n"
+groups
+
+printf "\nchgrp wheel recap\n"
+chgrp --no-dereference wheel recap
+
+printf "\nchown -h antoine:antoine recap\n"
+chown -h antoine:wheel recap
+chown antoine:antoine recap
+
+printf "\nchmod 0777 essentials.sh\n"
+chmod 0777 essentials.sh
+
