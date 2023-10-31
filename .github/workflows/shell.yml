@@ -6,7 +6,6 @@ on:
       - '*.sh'
       - '.github/workflows/shell.yml'
 
-permissions: {}
 jobs:
   test:
     runs-on: ubuntu-latest
