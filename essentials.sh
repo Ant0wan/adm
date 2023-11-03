@@ -45,7 +45,7 @@ stat /tmp/ | grep Access | head -n1 | lolcat
 
 printf "\nfind . -name "e*"\n"
 find . -name "e*" 2>/dev/null
-printf "\nfind /var/ -mmin -5\n"
-find /var/ -mmin -5 2>/dev/null
+printf "\nfind /var/ -mmin -5 -o -size +512M\n"
+find /var/ -mmin -5 -o -size +512M 2>/dev/null
 printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
 printf "\n\n"
