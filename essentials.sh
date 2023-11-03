@@ -11,8 +11,8 @@ ip route list | lolcat
 printf "\napropos compiler --sections=1\n"
 apropos compiler --sections=1
 
-printf "\nsystemctl list-dependencies --no-pager\n"
-systemctl list-dependencies --no-pager
+printf "\nsystemctl list-dependencies --no-pager | head -n5\n"
+systemctl list-dependencies --no-pager | head -n5
 
 printf "\nstat /etc/\n"
 stat /etc/ | lolcat
