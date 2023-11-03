@@ -29,10 +29,19 @@ chown antoine:antoine recap
 
 printf "\nPermissions: 4(r) + 2(w) + 1(x)\n" | lolcat
 printf "explained 2^2=4(r) | 2^1=2(w) | 2^0=1(x)\n" | lolcat
-printf "or: u+=-rwx,g+=-rwx,o+=-rwx\n" | lolcat
+printf "or: u+=-rwx,g+=-rwx,o+=-rwx OR a+=-rwx\n" | lolcat
 printf "chmod 0777 essentials.sh\n"
 chmod 0777 essentials.sh
 printf "chmod u=rwx,g=rx,o= recap\n"
 chmod u=rwx,g=rx,o= recap
 stat essentials.sh  | grep Access | head -n1 | lolcat
+
+printf "\nuid,guid,sticky: 4 + 2 + 1\n" | lolcat
+printf "s: permission, S: not permission: rwSrwsrwx\n" | lolcat
+ls -l /usr/bin/passwd
+stat /usr/bin/passwd | grep Access | head -n1 | lolcat
+ls -ld /tmp/
+stat /tmp/ | grep Access | head -n1 | lolcat
+
+
 
