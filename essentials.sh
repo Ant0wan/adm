@@ -43,8 +43,8 @@ stat /usr/bin/passwd | grep Access | head -n1 | lolcat
 ls -ld /tmp/
 stat /tmp/ | grep Access | head -n1 | lolcat
 
-printf "\nfind . -name "e*"\n"
-find . -name "e*" 2>/dev/null
+printf "\nfind . -name 'e*' -not -name '*.sh'\n"
+find . -name 'e*' -not -name '*.sh' 2>/dev/null
 printf "\nfind /var/ -mmin -5 -o -size +512M\n"
 find /var/ -mmin -5 -o -size +512M 2>/dev/null
 printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
