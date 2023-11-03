@@ -43,5 +43,9 @@ stat /usr/bin/passwd | grep Access | head -n1 | lolcat
 ls -ld /tmp/
 stat /tmp/ | grep Access | head -n1 | lolcat
 
-
+printf "\nfind . -name "e*"\n"
+find . -name "e*" 2>/dev/null
+printf "\nfind /var/ -mmin -5\n"
+find /var/ -mmin -5 2>/dev/null
+printf "\n\n"
 
