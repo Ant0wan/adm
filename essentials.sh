@@ -45,8 +45,8 @@ stat /tmp/ | grep Access | head -n1 | lolcat
 
 printf "\nfind . -name 'e*' -not -name '*.sh'\n"
 find . -name 'e*' -not -name '*.sh' 2>/dev/null
-printf "\nfind . -name 'e*' \! -name '*.sh'\n"
-find . -name 'e*' \! -name '*.sh' 2>/dev/null
+printf "\nfind . -name 'e*' \! -name '*.sh' -perm 1000\n"
+find . -name 'e*' \! -name '*.sh' -perm 1000 2>/dev/null
 printf "\nfind /var/ -mmin -5 -o -size +512M\n"
 find /var/ -mmin -5 -o -size +512M 2>/dev/null
 printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
