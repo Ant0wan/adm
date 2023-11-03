@@ -50,6 +50,7 @@ find . -name 'e*' \! -name '*.sh' -perm -1000 2>/dev/null
 printf "\nfind /var/ -mmin -5 -o -size +512M\n"
 find /var/ -mmin -5 -o -size +512M 2>/dev/null
 printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
-printf "\nfind / -maxdepth 1 -type d -perm -1000 -exec file '{}' \; -exec stat -c %%A '{}' \;\n"
+printf "\n(nothing) exact match, - at least, / has any of these\n" | lolcat
+printf "\nfind / -maxdepth 1 -type d -perm -1444 -exec file '{}' \; -exec stat -c %%A '{}' \;\n"
 find / -maxdepth 1 -type d -perm -1000 -exec file '{}' \; -exec stat -c %A '{}' \;
 printf "\n\n"
