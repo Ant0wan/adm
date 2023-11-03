@@ -47,5 +47,5 @@ printf "\nfind . -name "e*"\n"
 find . -name "e*" 2>/dev/null
 printf "\nfind /var/ -mmin -5\n"
 find /var/ -mmin -5 2>/dev/null
-printf "\nmeta changed, content modified\n" | lolcat
+printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
 printf "\n\n"
