@@ -53,4 +53,5 @@ printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
 printf "\n(nothing) exact match, - at least, / has any of these\n" | lolcat
 printf "\nfind / -maxdepth 1 -type d -perm -1444 -exec file '{}' \; -exec stat -c %%A '{}' \;\n"
 find / -maxdepth 1 -type d -perm -1000 -exec file '{}' \; -exec stat -c %A '{}' \;
+printf "\ntac\n"
 printf "\n\n"
