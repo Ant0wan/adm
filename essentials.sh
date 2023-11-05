@@ -59,4 +59,5 @@ printf "tar --append --file archive.tar .git/\n"
 printf "tar --create --gzip|--bzip2|--xz|--autocompress --file archive.tar.gz essentials.sh\n" | lolcat
 printf "tar --extract --file archive.tar --directory /tmp/\n"
 printf "sudo tar --extract --file archive.tar --directory /tmp/\n" | lolcat
-printf "\n\n"
+printf "\nrsync --archive /Prictures/ aaron@1.1.1.1:/Pictures/ \n"
+printf "\nsudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress\n"|lolcat
