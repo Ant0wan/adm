@@ -65,3 +65,10 @@ printf "sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress\n"
 printf "\nopenssl req -newkey rsa:4096 -keyout key.pem -out req.pem\n"
 printf "openssl req -x509 -newkey rsa:4096 -days 365 -keyout myprivatekey.pem -out certificate.crt\n" |lolcat
 printf "openssl x509 -in certificate.crt -text\n" | lolcat
+printf "\nsystemctl reboot --force --force\n"
+printf "systemctl poweroff --force\n"
+printf "sudo shutdown 02:00|+15 --reboot 'Message to warn users'\n"|lolcat
+printf "\nsystemctl get-default\n"
+systemctl get-default
+printf "\nsudo systemctl set-default multi-user.target\n"
+printf "sudo systemctl isolate (graphical|emergency|rescue|multi-user).target\n" | lolcat
