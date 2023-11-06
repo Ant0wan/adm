@@ -72,11 +72,14 @@ printf "\nsystemctl get-default\n"
 systemctl get-default
 printf "\nsudo systemctl set-default multi-user.target\n"
 printf "sudo systemctl isolate (graphical|emergency|rescue|multi-user).target\n"
-printf "\n Recover boot loader
+printf "\n Configure boot loader:
     sudo systemctl isolate rescue.target
     chroot /mnt/sysroot
     grub2-mkconfig -o /boot/grub2/grub.cfg   <- if legacy
-    grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg  <- if EFI\n" | lolcat
+    grub2-mkconfig -o /boot/efi/EFI/$(uname --nodename)/grub.cfg  <- if EFI\n" | lolcat
+printf "\nlsblk\n" | lolcat
+lsblk
+
 
 
 
