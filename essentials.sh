@@ -75,14 +75,22 @@ printf "sudo systemctl isolate (graphical|emergency|rescue|multi-user).target\n"
 printf "\n Configure boot loader:
     sudo systemctl isolate rescue.target
     chroot /mnt/sysroot
-    grub2-mkconfig -o /boot/grub2/grub.cfg   <- if legacy
-    grub2-mkconfig -o /boot/efi/EFI/$(uname --nodename)/grub.cfg  <- if EFI\n" | lolcat
+    grub2-mkconfig --output /boot/grub2/grub.cfg   <- if legacy
+    grub2-mkconfig --output /boot/efi/EFI/$(uname --nodename)/grub.cfg  <- if EFI\n" | lolcat
 printf "\nlsblk\n" | lolcat
 lsblk -o NAME,FSTYPE,MOUNTPOINT
 printf "\nOn grub:\n"
 printf "grub2-install /dev/sda\n" |lolcat
 printf "On EFI:\n"
 printf "dnf reinstall grub2-efi grub2-efi-modules shim\n" | lolcat
+printf "\nsudo vim /etc/default/grubi
+then grub2-mkconfig --output /boot/grub2/grub.cfg\n"
+cat /etc/default/grub
+printf "\ndate\n"
+date
+printf "\nshebang #!/bin/sh\n"
+printf "\nhelp\n"
+help | head -n 15 |lolcat
 
 
 
