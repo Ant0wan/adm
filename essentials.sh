@@ -64,3 +64,4 @@ printf "\nsudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress\n"
 printf "sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress\n"
 printf "\nopenssl req -newkey rsa:4096 -keyout key.pem -out req.pem\n" | lolcat
 printf "openssl req -x509 -newkey rsa:4096 -days 365 -keyout myprivatekey.pem -out certificate.crt\n" |lolcat
+printf "openssl x509 -in certificate.crt -text\n" | lolcat
