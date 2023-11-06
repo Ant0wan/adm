@@ -89,9 +89,10 @@ cat /etc/default/grub
 printf "\ndate\n"
 date
 printf "\nshebang #!/bin/sh\n"
-printf "\nhelp\n"
-help | head -n 15 |lolcat
+printf "\nhelp\n"|lolcat
+help | head -n 15
 printf "\nsystemctl start|stop|restart|reload|status|reload-or-restart|disable|enable --now unit.service\n"
+printf "systemctl mask|unmask unit.service\n" | lolcat
 
 
 
