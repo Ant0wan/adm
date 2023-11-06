@@ -61,3 +61,20 @@ printf "tar --extract --file archive.tar --directory /tmp/\n"
 printf "sudo tar --extract --file archive.tar --directory /tmp/\n" | lolcat
 printf "\nrsync --archive /Prictures/ aaron@1.1.1.1:/Pictures/ \n"
 printf "\nsudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress\n"|lolcat
+printf "\nsudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress\n"|lolcat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
