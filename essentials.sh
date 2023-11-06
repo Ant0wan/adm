@@ -96,7 +96,8 @@ printf "systemctl mask|unmask unit.service\n" | lolcat
 printf "systemctl list-units --type service --all\n" | lolcat
 systemctl list-units --type service --all --no-pager | head -n
 printf "\nls /lib/systemd/system\n"
-ls /lib/systemd/system | head -n 5 | lolcat
+ls /lib/systemd/system | head -n 5
+lolcat app.service
 
 
 

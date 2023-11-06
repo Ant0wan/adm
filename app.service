@@ -12,6 +12,10 @@ ExecReload=/bin/kill -HUP $MAINPID
 KillMode=group
 Restart=on-failure
 RestartSec=42s
+RestartPreventExitStatus=255
+Type=simple
+RuntimeDirectory=myapp
 
 [Install]
 WantedBy=multi-user.target
+Alias=myapp.service
