@@ -98,6 +98,7 @@ systemctl list-units --type service --all --no-pager | head -n
 printf "\nls /lib/systemd/system\n"
 ls /lib/systemd/system | head -n 5
 lolcat app.service
+printf "\ntouch /etc/systemd/system/myapp.service; sudo systemctl daemon-reload\n"
 
 
 
