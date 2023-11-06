@@ -1,0 +1,17 @@
+[Unit]
+Description=My Application
+After=network.target
+ConditionPathExists=!/usr/bin/otherapp
+
+[Service]
+Type=notify
+EnvironmentFile=-/etc/sysconfig/sshd
+ExecStartPre=echo "About to start"
+ExecStart=/usr/sbin/myapp
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=group
+Restart=on-failure
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
