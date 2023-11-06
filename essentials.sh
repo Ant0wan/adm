@@ -62,5 +62,5 @@ printf "sudo tar --extract --file archive.tar --directory /tmp/\n" | lolcat
 printf "\nrsync --archive /Prictures/ aaron@1.1.1.1:/Pictures/ \n"
 printf "\nsudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress\n"
 printf "sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress\n"
-printf "\nopenssl req -x509 -newkey rsa:4096 -keyout key.pem -out req.pem\n" | lolcat
+printf "\nopenssl req -newkey rsa:4096 -keyout key.pem -out req.pem\n" | lolcat
 printf "openssl req -x509 -noenc -newkey rsa:4096 -days 365 -keyout key.pem -out certificate.crt\n" |lolcat
