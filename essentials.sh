@@ -71,4 +71,14 @@ printf "sudo shutdown 02:00|+15 --reboot 'Message to warn users'\n"|lolcat
 printf "\nsystemctl get-default\n"
 systemctl get-default
 printf "\nsudo systemctl set-default multi-user.target\n"
-printf "sudo systemctl isolate (graphical|emergency|rescue|multi-user).target\n" | lolcat
+printf "sudo systemctl isolate (graphical|emergency|rescue|multi-user).target\n"
+printf "\n Recover boot loader
+    sudo systemctl isolate rescue.target
+    chroot /mnt/sysroot
+    grub2-mkconfig -o /boot/grub2/grub.cfg   <- if legacy
+    grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg  <- if EFI\n" | lolcat
+
+
+
+
+
