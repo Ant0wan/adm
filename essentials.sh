@@ -78,7 +78,11 @@ printf "\n Configure boot loader:
     grub2-mkconfig -o /boot/grub2/grub.cfg   <- if legacy
     grub2-mkconfig -o /boot/efi/EFI/$(uname --nodename)/grub.cfg  <- if EFI\n" | lolcat
 printf "\nlsblk\n" | lolcat
-lsblk
+lsblk -o NAME,FSTYPE,MOUNTPOINT
+printf "\nOn grub:\n"
+printf "grub2-install /dev/sda\n" |lolcat
+printf "On EFI:\n"
+printf "dnf reinstall grub2-efi grub2-efi-modules shim\n" | lolcat
 
 
 
