@@ -104,8 +104,3 @@ printf "man systemd.unit\n"
 printf "\nsystemctl show --property MainPID --value sshd\n"
 systemctl show --property MainPID --value sshd
 
-
-
-
-
-
