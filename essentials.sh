@@ -142,3 +142,12 @@ crontab -l
 printf "\n
 crontab -r
 sudo crontab -e|-l -u jane\n"
+printf "
+cat /etc/anacrontab
+-> no file extension
+daily = /etc/cron.daily
+hourly = /etc/cron.hourly
+monthly = /etc/cron.monthly
+weekly = /etc/cron.weekly
+" | lolcat
+cat /etc/anacrontab
