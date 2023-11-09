@@ -157,5 +157,7 @@ printf "\nat 15:00
 at '2:30 August 20 2024
 at 'now + 3 months'
 atq
+at -c 20
+at -c JOBNUMBER
 \n"
 atq
