@@ -118,5 +118,6 @@ less /var/log/secure
 less /var/log/messages
 journalctl /bin/sudo     OR journalctl /bin/myapp
 journalctl --unit sshd.service
+journalctl --pager-end
+journalctl --follow
 \n"
-
