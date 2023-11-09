@@ -120,4 +120,8 @@ journalctl /bin/sudo     OR journalctl /bin/myapp
 journalctl --unit sshd.service
 journalctl --pager-end
 journalctl --follow
+journalctl --priority info|warning|err|crit|.....
+journalctl --priority --grep '^p'
+journalctl --since 01:00 --until 02:00
+
 \n"
