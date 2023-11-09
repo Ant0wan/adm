@@ -5,3 +5,4 @@ printf "Mebibyte vs Megabyte\n"
 uptime
 lscpu
 lscpi
+sudo xfs_repair -v /dev/vdb1
