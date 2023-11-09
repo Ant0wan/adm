@@ -126,5 +126,7 @@ journalctl --since 01:00 --until 02:00
 journalctl --since '2023-11-08 12:04:34'
 journalctl --boot -1
 sudo mkdir /var/log/journal/
+last
+lastlog
 
 \n"
