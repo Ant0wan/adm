@@ -159,5 +159,6 @@ at 'now + 3 months'
 atq
 at -c 20
 at -c JOBNUMBER
+atrm JOBNUMBER
 \n"
 atq
