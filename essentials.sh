@@ -151,3 +151,5 @@ monthly = /etc/cron.monthly
 weekly = /etc/cron.weekly
 " | lolcat
 cat /etc/anacrontab
+printf "\nanacron -T\n"
+anacron -T
