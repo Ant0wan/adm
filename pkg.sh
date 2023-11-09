@@ -9,3 +9,8 @@ sudo vi /etc/apt/sources.list.d/ecample.list
 
 sudo apt update
 \n" | lolcat
+
+printf "OR personnal package archive\n"
+printf "sudo add-apt-repository ppa:graphics-drivers/ppa
+add-apt-repository --list\n" | lolcat
+
