@@ -137,6 +137,8 @@ match multiple values: 15,45
 match range of values 2-4
 specifies steps */4 <- devide the hour or day or... by 4 i.e. every 4\n"
 printf "crontab -e
-sudo crontab -l \n"
+sudo crontab -l\n"
 crontab -l
-printf "\nsudo crontab -e|-l -u jane"
+printf "\n
+crontab -r
+sudo crontab -e|-l -u jane\n"
