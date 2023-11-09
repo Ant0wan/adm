@@ -1,0 +1,7 @@
+df --human-readable
+du --summarize --human-readable /bin/
+free --human
+printf "Mebibyte vs Megabyte\n"
+uptime
+lscpu
+lscpi
