@@ -103,4 +103,20 @@ printf "man systemd.*\n"
 printf "man systemd.unit\n"
 printf "\nsystemctl show --property MainPID --value sshd\n"
 systemctl show --property MainPID --value sshd
+printf "\n
+ps u -U antoine
+pgrep -a bash
+lsof -p 1
+sudo lsof /var/log/firewalld
+top
+kill -L
+jobs
+ls /var/log/
+su   OR sudo --login
+grep -r 'ssh' /var/log/
+less /var/log/secure
+less /var/log/messages
+journalctl /bin/sudo     OR journalctl /bin/myapp
+journalctl --unit sshd.service
+\n"
 
