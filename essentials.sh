@@ -128,5 +128,7 @@ journalctl --boot -1
 sudo mkdir /var/log/journal/
 last
 lastlog
-
 \n"
+
+printf "\ncat /etc/crontab/\n"
+cat /etc/crontab | lolcat
