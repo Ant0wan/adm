@@ -13,4 +13,5 @@ sudo apt update
 printf "OR personnal package archive\n"
 printf "sudo add-apt-repository ppa:graphics-drivers/ppa
 add-apt-repository --list\n" | lolcat
+printf "sudo add-apt-repository --remove ppa:graphics-drivers/ppa\n"
 
