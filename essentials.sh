@@ -160,5 +160,11 @@ atq
 at -c 20
 at -c JOBNUMBER
 atrm JOBNUMBER
+atd
 \n"
 atq
+printf "sudo cat /var/log/cron\n"
+printf "
+rpm --query --list gcc\n" | lolcat
+rpm --query --list gcc | head -n6
+
