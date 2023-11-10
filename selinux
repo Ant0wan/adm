@@ -6,4 +6,8 @@ printf "\nps axZ\n" | lolcat
 ps axZ | head -n 5 | tail -n +2
 printf "\nid -Z\n" | lolcat
 id -Z
+printf "\nsudo semanage login -l" | lolcat
+sudo semanage login -l
+printf "\nsudo semanage user -l" | lolcat
+sudo semanage user -l
 
