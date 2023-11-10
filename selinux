@@ -1,0 +1,4 @@
+printf "SeLinux Context
+user:role:type:level\n" | lolcat
+ls --context
+
