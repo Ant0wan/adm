@@ -1,4 +1,7 @@
 printf "SeLinux Context
 user:role:type:level\n" | lolcat
+printf "\nls --context\n" | lolcat
 ls --context
+printf "\nps axZ | head -n 5\n" | lolcat
+ps axZ | head -n 5
 
