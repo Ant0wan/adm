@@ -12,3 +12,4 @@ printf "\nsudo semanage user -l" | lolcat
 sudo semanage user -l
 printf "\ngetenforce\n" | lolcat
 getenforce
+
