@@ -1,4 +1,3 @@
-#!/bin/sh
 apropos --sections=8 director
 apropos compiler --sections=1
 systemctl list-dependencies --no-pager
@@ -24,19 +23,24 @@ stat /tmp/ | grep Access | head -n1
 find . -name 'e*' -not -name '*.sh' 2>/dev/null
 find . -name 'e*' \! -name '*.sh' -perm -1000 2>/dev/null
 find /var/ -mmin -5 -o -size +512M 2>/dev/null
-printf "\nmeta changed -ctime, content modified -mtime\n" | lolcat
-printf "\n(nothing) exact match, - at least, / has any of these\n" | lolcat
-printf "\nfind / -maxdepth 1 -type d -perm -1444 -exec file '{}' \; -exec stat -c %%A '{}' \;\n"
+# meta changed -ctime, content modified -mtime
+# (nothing) exact match, - at least, / has any of these
+find / -maxdepth 1 -type d -perm -1444 -exec file '{}' \; -exec stat -c %%A '{}' \;
 find / -maxdepth 1 -type d -perm -1000 -exec file '{}' \; -exec stat -c %A '{}' \;
-printf "\ntac\n"
-printf "\ntar --create --file archive.tar essentials.sh\n"
-printf "tar --append --file archive.tar .git/\n"
-printf "tar --create --gzip|--bzip2|--xz|--autocompress --file archive.tar.gz essentials.sh\n" | lolcat
-printf "tar --extract --file archive.tar --directory /tmp/\n"
-printf "sudo tar --extract --file archive.tar --directory /tmp/\n" | lolcat
-printf "\nrsync --archive /Prictures/ aaron@1.1.1.1:/Pictures/ \n"
-printf "\nsudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress\n"
-printf "sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress\n"
-printf "\nopenssl req -newkey rsa:4096 -keyout key.pem -out req.pem\n"
-printf "openssl req -x509 -newkey rsa:4096 -days 365 -keyout myprivatekey.pem -out certificate.crt\n" |lolcat
-printf "openssl x509 -in certificate.crt -text\n" | lolcat
+tac
+
+tar --create --file archive.tar essentials.sh
+tar --append --file archive.tar .git/
+# tar --create --gzip|--bzip2|--xz|--autocompress --file archive.tar.gz essentials.sh
+tar --create --autocompress --file archive.tar.gz essentials.sh
+tar --extract --file archive.tar --directory /tmp/
+sudo tar --extract --file archive.tar --directory /tmp/
+
+rsync --archive /Prictures/ aaron@1.1.1.1:/Pictures/
+
+sudo dd if=/dev/vda of=diskimage.raw bs=1M status=progress
+sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress
+
+openssl req -newkey rsa:4096 -keyout key.pem -out req.pem
+openssl req -x509 -newkey rsa:4096 -days 365 -keyout myprivatekey.pem -out certificate.crt
+openssl x509 -in certificate.crt -text
