@@ -1,7 +1,6 @@
 #!/bin/sh
 figlet Linux System Administrator | lolcat
 
-printf "\nSELinux\n"
 lolcat selinux
 lolcat security
 

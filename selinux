@@ -6,3 +6,4 @@ sudo semanage login -l
 sudo semanage user -l
 getenforce
 sestatus
+
