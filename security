@@ -22,4 +22,7 @@ sudo chcon -u unconfined_u /var/log/auth.log
 sudo chcon -r object_r /var/log/auth.log
 sudo chcon -t user_home_t /var/log/auth.log
 ls -Z /var/log/auth.log
+seinfo -u
+seinfo -r
+seinfo -t
 
