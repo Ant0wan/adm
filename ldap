@@ -10,5 +10,7 @@ sudo apt update && sudo apt install libnss-ldapd -y
 # IP example from lxc list: 240.50.0.218
 # Name dc=kodekloud,dc=com
 # Services passwd, group, shadow
-cat /etc/nsswitch.conf
+
+sudo cat /etc/nsswitch.conf
 # passwd:   files systemd ldap
+sudo cat /etc/nslcd.conf
