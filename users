@@ -18,4 +18,5 @@ sudo usermod --shell /bin/zsh jane
 sudo usermod --lock|--unlock jane
 sudo usermod --expiredate 2012-12-10 jane
 sudo usermod --expiredate "" jane
+sudo chage --lastday 0 jane
 
