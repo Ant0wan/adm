@@ -16,3 +16,5 @@ sudo cat /etc/nsswitch.conf
 sudo cat /etc/nslcd.conf
 getent passwd
 getent passwd --service ldap
+getent group --service ldap
+
