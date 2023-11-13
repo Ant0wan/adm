@@ -25,4 +25,6 @@ ls -Z /var/log/auth.log
 seinfo -u
 seinfo -r
 seinfo -t
+ls -Z /var/log/ <- copy similar context, use other file as reference
+sudo chron --reference=/var/log/syslog /var/log/auth.log
 
