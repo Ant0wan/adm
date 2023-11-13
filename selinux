@@ -46,4 +46,3 @@ sudo setsebool virt_use_nfs 1
 sudo getsebool virt_use_nfs
 sudo semanage port --add --type ssh_port_t --proto tcp 2222
 sudo semanage port --delete --type ssh_port_t --proto tcp 2222
-

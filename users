@@ -25,4 +25,3 @@ sudo chage --maxdays -1 jane
 sudo chage --list jane
 sudo userdel john
 sudo groupdel john
-

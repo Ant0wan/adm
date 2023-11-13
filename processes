@@ -100,4 +100,3 @@ atd
 sudo cat /var/log/cron
 
 rpm --query --list gcc
-
