@@ -3,7 +3,7 @@ name: Shell
 on:
   push:
     paths:
-      - '*.sh'
+      - '/*'
       - '.github/workflows/shell.yml'
 
 jobs:
@@ -14,13 +14,3 @@ jobs:
       - uses: ludeeus/action-shellcheck@master
         env:
           SHELLCHECK_OPTS: -s sh
-  output:
-    needs: shellcheck
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: |
-          sudo apt-get update
-          sudo apt-get install -yq lolcat figlet
-      - run: sh essentials.sh
-
