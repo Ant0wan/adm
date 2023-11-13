@@ -30,5 +30,8 @@ sudo gpasswd --add trinity wheel  # Gives privileges
 sudo visudo   # %wheel ALL=(ALL)   ALL
 # %user/group  HOST=(RUNAS)   PORTFIELD
 # user/group host=(run_as_user) command_list
+# Root Account
 sudo --login  # login as root
 su --login   # or su or su -l
+sudo passwd root
+sudo passwd --unlock root
