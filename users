@@ -6,5 +6,10 @@ sudo passwd john
 sudo userdel john
 sudo userdel --remove john
 sudo useradd --shell /bin/sh --home-dir /home/john2/ john
-
+cat /etc/passwd
+sudo useradd --uid 1100 smith
+ls -ln /home/
+id
+whoami
+sudo useradd --system sysacc    <- value id <= 999
 
