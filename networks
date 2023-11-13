@@ -27,4 +27,4 @@ cat /usr/share/doc/netplan/examples/static.yaml
 ss   # socket statistics
 netstat
 sudo ss --listening --tcp --udp --numeric --processes  # ss -ltunp
-
+netstat -ltunp
