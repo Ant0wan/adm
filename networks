@@ -16,3 +16,5 @@ cat /etc/netplan/99-mysettings.yaml
 resolvectl status
 cat /etc/systemd.resolved.conf
 # DNS=1.1.1.1,9.9.9.9
+resolvectl dns
+
