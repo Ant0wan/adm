@@ -5,4 +5,14 @@ network:
       dhcp6: false
       addresses:
         - 10.0.0.9/24
+        - fe80::abcd/64
+      nameservers:
+        - 8.8.4.4
+        - 8.8.8.8
+        - 1.1.1.1
+      routes:
+        - to: 192.168.0.0/24
+          via: 10.0.0.100
+        - to: default
+          via: 10.0.0.1
   version: 2
