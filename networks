@@ -24,6 +24,7 @@ ls /usr/share/doc/netplan/examples/
 cat /usr/share/doc/netplan/examples/dhcp.yaml
 cat /usr/share/doc/netplan/examples/static.yaml
 
-ss
+ss   # socket statistics
 netstat
 sudo ss --listening --tcp --udp --numeric --processes  # ss -ltunp
+
