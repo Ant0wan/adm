@@ -17,3 +17,4 @@ sudo vi /etc/selinux/config
 SELINUX=enforcing
 pp: policy package
 te: type enforcement
+cat mymodule.te
