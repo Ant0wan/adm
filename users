@@ -2,4 +2,7 @@ sudo useradd john <- create user and group john and /home/john and default /bin/
 ls -a /etc/skel <- copy pasted in /home/john
 useradd --defaults
 cat /etc/login.defs
+sudo passwd john
+sudo userdel john
+
 
