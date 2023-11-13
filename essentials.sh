@@ -3,6 +3,7 @@ figlet Linux System Administrator | lolcat
 
 lolcat selinux
 lolcat security
+lolcat users
 
 exit 1
 printf "\nip address show\n"
