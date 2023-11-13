@@ -12,4 +12,5 @@ sudo audit2why --all
 ps -eZ
 sudo audit2allow --all -M mymodule
 sudo semodule -i mymodule.pp
+sudo setenforce 1
 
