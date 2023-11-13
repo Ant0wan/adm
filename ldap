@@ -18,3 +18,11 @@ getent passwd
 getent passwd --service ldap
 getent group --service ldap
 
+sudo pam-auth-update
+# [x] Unix Authentication
+# [x] LDAP Authentication
+# [x] Register user session in the systemd control group hierarchy
+# [x] Inheritable Capabilities Management
+# [x] Create home directory on login
+sudo login john
+
