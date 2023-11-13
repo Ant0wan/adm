@@ -26,3 +26,7 @@ sudo chage --list jane
 sudo userdel john
 sudo groupdel john
 sudo -iu john
+sudo gpasswd --add trinity wheel  # Gives privileges
+sudo visudo   # %wheel ALL=(ALL)   ALL
+# %user/group  HOST=(RUNAS)   PORTFIELD
+# user/group host=(run_as_user) command_list
