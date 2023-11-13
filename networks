@@ -19,3 +19,4 @@ cat /etc/systemd.resolved.conf
 resolvectl dns
 cat /etc/host
 # 127.0.123.123 dbserver
+man netplan
