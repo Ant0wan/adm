@@ -100,3 +100,9 @@ atd
 sudo cat /var/log/cron
 
 rpm --query --list gcc
+
+cat /etc/security/limits.conf
+# john hard  nproc 10
+# @developers soft nproc 20
+# * soft cpu 5
+
