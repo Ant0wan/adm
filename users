@@ -1,5 +1,5 @@
-sudo useradd john <- create user and group john and /home/john and default /bin/bash
-ls -a /etc/skel <- copy pasted in /home/john
+sudo useradd john   # create user and group john and /home/john and default /bin/bash
+ls -a /etc/skel    # copy pasted in /home/john
 useradd --defaults
 cat /etc/login.defs
 sudo passwd john
@@ -11,7 +11,7 @@ sudo useradd --uid 1100 smith
 ls -ln /home/
 id
 whoami
-sudo useradd --system sysacc    <- value id <= 999
+sudo useradd --system sysacc   # id value <= 999
 sudo usermod --home /home/other --move-home john
 sudo usermod --login jane john
 sudo usermod --shell /bin/zsh jane
