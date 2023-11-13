@@ -9,3 +9,5 @@ GRUB_CMDLINE_LINUX=" security=selinux"
 sudo sysctemctl reboot
 getenforce <- if permissive just observing
 sudo audit2why --all
+ps -eZ
+
