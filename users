@@ -19,4 +19,10 @@ sudo usermod --lock|--unlock jane
 sudo usermod --expiredate 2012-12-10 jane
 sudo usermod --expiredate "" jane
 sudo chage --lastday 0 jane
+sudo chage --lastday -1 jane
+sudo chage --maxdays 30 jane
+sudo chage --maxdays -1 jane
+sudo chage --list jane
+sudo userdel john
+sudo groupdel john
 
