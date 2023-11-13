@@ -1,0 +1,6 @@
+printenv HOME
+env
+HISTSIZE=2000
+history
+sudo cat /etc/environment
+echo 'echo "Your last login: " $(date)' | sudo tee /etc/profile.d/example.sh
