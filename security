@@ -15,3 +15,5 @@ sudo semodule -i mymodule.pp
 sudo setenforce 1
 sudo vi /etc/selinux/config
 SELINUX=enforcing
+pp: policy package
+te: type enforcement
