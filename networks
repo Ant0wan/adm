@@ -9,4 +9,5 @@ sudo ip address delete fe80::5054:ff:fe1f:8050/64 dev eth1  # not permanent
 netplan get
 ls /etc/netplan/
 cat /etc/netplan/00-installer-config.yaml
+sudo netplan try
 
