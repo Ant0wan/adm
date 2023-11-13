@@ -4,5 +4,7 @@ useradd --defaults
 cat /etc/login.defs
 sudo passwd john
 sudo userdel john
+sudo userdel --remove john
+sudo useradd --shell /bin/sh --home-dir /home/john2/ john
 
 
