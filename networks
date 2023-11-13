@@ -20,3 +20,6 @@ resolvectl dns
 cat /etc/host
 # 127.0.123.123 dbserver
 man netplan
+ls /usr/share/doc/netplan/examples/
+cat /usr/share/doc/netplan/examples/dhcp.yaml
+cat /usr/share/doc/netplan/examples/static.yaml
