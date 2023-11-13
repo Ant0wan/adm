@@ -25,4 +25,3 @@ sudo pam-auth-update
 # [x] Inheritable Capabilities Management
 # [x] Create home directory on login
 sudo login john
-
