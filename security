@@ -31,4 +31,6 @@ sudo restorecon -R /var/www/
 sudo restorecon -R -F /var/www/
 sudo semanage fcontext --add --type var_log_t /var/www/file
 sudo restorecon /var/www/file
+sudo semanage fcontext --file | grep '/var/www/'
+sudo semanage fcontext --add --type nfs_t "/nfs/shares(/.*)?"
 
