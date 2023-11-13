@@ -12,4 +12,7 @@ ls -ln /home/
 id
 whoami
 sudo useradd --system sysacc    <- value id <= 999
+sudo usermod --home /home/other --move-home john
+sudo usermod --login jane john
+sudo usermod --shell /bin/zsh jane
 
