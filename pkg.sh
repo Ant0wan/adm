@@ -1,17 +1,12 @@
-#!/bin/sh
-printf "sudo vim /etc/apt/sources.list
+cat /etc/apt/sources.list
 curl https://...... -o example.key
 gpg --dearmor example.key
 sudo mv example.key.gpg /etc/apt/keyrings/
-
-sudo vi /etc/apt/sources.list.d/ecample.list
-'deb [signed-by=/etc/apt/keyrings/example.key.gpg] https://....... jammy stable'
-
+cat /etc/apt/sources.list.d/ecample.list
+# 'deb [signed-by=/etc/apt/keyrings/example.key.gpg] https://....... jammy stable'
 sudo apt update
-\n" | lolcat
 
-printf "OR personnal package archive\n"
-printf "sudo add-apt-repository ppa:graphics-drivers/ppa
-add-apt-repository --list\n" | lolcat
-printf "sudo add-apt-repository --remove ppa:graphics-drivers/ppa\n"
-
+# personnal package archive\n"
+sudo add-apt-repository ppa:graphics-drivers/ppa
+add-apt-repository --list
+sudo add-apt-repository --remove ppa:graphics-drivers/ppa
