@@ -18,3 +18,8 @@ SELINUX=enforcing
 pp: policy package
 te: type enforcement
 cat mymodule.te
+sudo chcon -u unconfined_u /var/log/auth.log
+sudo chcon -r object_r /var/log/auth.log
+sudo chcon -t user_home_t /var/log/auth.log
+ls -Z /var/log/auth.log
+
