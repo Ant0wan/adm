@@ -1,12 +1,15 @@
 #!/bin/sh
 figlet Linux System Administrator | lolcat
 
+printf "\nSELinux\n"
+lolcat selinux
+lolcat security
+
+exit 1
 printf "\nip address show\n"
 ip address show
-
 printf "\nip route list\n"
-ip route list | lolcat
-
+ip route list
 #apropos --sections=8 director
 printf "\napropos compiler --sections=1\n"
 apropos compiler --sections=1
