@@ -1,0 +1,5 @@
+lxd init
+wget https://public-kodekloud-course-assets.s3.amazonaws.com/ldap-server.tar.xz
+lxc import ldap-server.tar.xz
+
+
