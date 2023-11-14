@@ -34,3 +34,4 @@ firewall-cmd --set-default-zone=public
 firewall-cmd --list-all
 firewall-cmd --info-service=cockpit
 
+sudo firewall-cmd --add-service=http # or sudo firewall-cnd --add-port=80/tcp
