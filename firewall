@@ -8,7 +8,7 @@ sudo ufw status verbose
 ss --tcp --numeric
 sudo ufw allow from 192.168.1.60 to any port 22
 
-sudo ufw status numbered
+sudo ufw status numbered   # applied top down
 sudo ufw delete 1
 
 sudo ufw allow 22
@@ -17,7 +17,9 @@ sudo ufw delete allow 22
 sudo ufw allow from 10.11.12.0/24 to any port 22
 sudo ufw allow from 10.11.12.0/24
 sudo ufw deny from 10.11.12.100
-sudo ufw status numbered   # ordering is top down
 sudo ufw insert 3 deny from 10.11.100
+
+ping -c 4 8.8.8.8
+sudo ufw deny out on enp0s3 8.8.8.8   # outbound to ip
 
 
