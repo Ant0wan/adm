@@ -28,3 +28,20 @@ ss   # socket statistics
 netstat
 sudo ss --listening --tcp --udp --numeric --processes  # ss -ltunp
 netstat -ltunp
+
+# Bridge - network devices == ports and bridge == controller
+
+
+# Bond
+# Bondig Mode
+Mode 0 : Round Robin
+Mode 1 : Active - passive
+Mode 2 : Balance XOR
+Mode 3 : Broadcast
+mode 4 : IEEE 802.3ad
+mode 5 : balance-tlb  adaptative transmit load balancing
+mode 6 : balance-alb  adaptative load balancing
+
+
+
+
