@@ -36,4 +36,8 @@ firewall-cmd --info-service=cockpit
 
 sudo firewall-cmd --add-service=http # or sudo firewall-cnd --add-port=80/tcp
 sudo firewall-cmd --remove-service=http # or sudo firewall-cnd --remove-port=80/tcp
-
+sudo firewall-cmd --add-source=10.11.12.0/24 --zone=trusted
+firewall-cmd --get-active-zone
+sudo firewall-cmd --remove-source=10.11.12.0/24 --zone=trusted
+sudo firewall-cmd --runtime-to-permanent   # make rules permanent
+sudo firewall-cmd --add-port=1234/tcp --permanent   # does not make it active in current session
