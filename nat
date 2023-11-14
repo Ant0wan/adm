@@ -8,4 +8,4 @@ sudo sysctl --all | grep forward
 # nft or iptables
 ip route list default
 # iptables chains
-iptables -t nat -A PREROUTING -i enp1s0 -s 10.0.0.0/24 -p tcp
+sudo iptables -t nat -A PREROUTING -i enp1s0 -s 10.0.0.0/24 -p tcp --dport 8080 -j DNAT --to-destination 192.168.0.5:80
