@@ -18,4 +18,6 @@ sudo ufw allow from 10.11.12.0/24 to any port 22
 sudo ufw allow from 10.11.12.0/24
 sudo ufw deny from 10.11.12.100
 sudo ufw status numbered   # ordering is top down
+sudo ufw insert 3 deny from 10.11.100
+
 
