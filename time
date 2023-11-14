@@ -3,3 +3,8 @@
 timedatectl list-timezones
 sudo timedatectl set-timezone America/New_York
 timedatectl
+sudo apt install systemd-timesyncd
+timedatectl set-ntp true
+sudo systemctl status systemd-timesync.service
+cat /etc/systemd/timesyncd.conf
+#NTP=0.us.pool.ntp.org 1.us.pool.ntp.org 2.us.pool.ntp.org 3.us.pool.ntp.org
