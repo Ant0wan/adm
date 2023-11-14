@@ -22,6 +22,7 @@ upstream mywebservers {
 	least_conn;
 	server 1.2.3.4 weight=3 down;
 	server 5.6.7.8;
+	server 15.16.17.18:8081;
 	server 10.20.30.40 backup;
 }
 server {
@@ -31,4 +32,6 @@ server {
 	}
 }
 "
-
+sudo ln -s /etc/nginx/sites-available/lb.conf /etc/nginx/sites-enabled/lb.conf
+sudo nginx -t
+sudo systemctl reload nginx.service
