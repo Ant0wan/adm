@@ -1,0 +1,2 @@
+# Packet filtering
+sudo ufw status
