@@ -22,4 +22,5 @@ sudo ufw insert 3 deny from 10.11.100
 ping -c 4 8.8.8.8
 sudo ufw deny out on enp0s3 8.8.8.8   # outbound to ip
 
-
+sudo ufw allow in on enp0s3 from 192.168.1.60 to 192.168.1.81 port 80 proto tcp
+sudo ufw allow out on enp0s3 from 192.168.1.81 to 192.168.1.60 port 80 proto tcp
