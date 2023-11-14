@@ -1,3 +1,10 @@
 # Load Balancing
 # nginx, haproxy, apache, traefik, squid
-
+sudo apt install nginx
+sudo vim /etc/nginx/sites-available/proxy.conf
+#server {
+#	listen 80;
+#	location /images {     <-- examples.com/images/dog.jpg, examples.com/images/animals/cat.jpg
+#		proxy_pass https://1.1.1.1;   <-- proxies to this webserver
+#	}
+#}
