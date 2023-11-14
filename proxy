@@ -9,6 +9,7 @@ sudo vim /etc/nginx/sites-available/proxy.conf
 #	}
 #}
 cat /etc/nginx/proxy_params
-ls /etc/nginx/sites-enabled/
+ls /etc/nginx/sites-enabled/  # all symlinks
 sudo ln -s /etc/nginx/sites-available/proxy.conf /etc/nginx/sites-enabled/proxy.conf
-sudo rm /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-enabled/default  # symlink
+sudo nginx -t
