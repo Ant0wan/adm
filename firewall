@@ -35,3 +35,5 @@ firewall-cmd --list-all
 firewall-cmd --info-service=cockpit
 
 sudo firewall-cmd --add-service=http # or sudo firewall-cnd --add-port=80/tcp
+sudo firewall-cmd --remove-service=http # or sudo firewall-cnd --remove-port=80/tcp
+
