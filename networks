@@ -39,4 +39,4 @@ netstat -ltunp
 #  mode 5 : balance-tlb  adaptative transmit load balancing
 #  mode 6 : balance-alb  adaptative load balancing
 cat /usr/share/doc/netplan/examples/bridge.yaml
-cat /usr/share/doc/netplan/examples/bond.yaml
+cat /usr/share/doc/netplan/examples/bonding.yaml
