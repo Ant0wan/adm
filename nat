@@ -13,4 +13,4 @@ sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o enp1s0 -j MASQUERADE
 sudo nft list ruleset
 sudo apt install iptables-persistent
 sudo iptables netfilter-persistent save
-
+man ufw-framework    # exemple section contains iptables examples
