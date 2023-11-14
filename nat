@@ -14,3 +14,4 @@ sudo nft list ruleset
 sudo apt install iptables-persistent
 sudo iptables netfilter-persistent save
 man ufw-framework    # exemple section contains iptables examples
+sudo iptables --list-rules --table nat
