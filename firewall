@@ -4,6 +4,13 @@ sudo ufw allow 22
 sudo ufw allow 22/tcp
 sudo ufw enable
 sudo ufw status verbose
+
 ss --tcp --numeric
 sudo ufw allow from 192.168.1.60 to any port 22
+
 sudo ufw status numbered
+sudo ufw delete 1
+
+sudo ufw allow 22
+sudo ufw delete allow 22
+
