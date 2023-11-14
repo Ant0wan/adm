@@ -13,3 +13,5 @@ ls /etc/nginx/sites-enabled/  # all symlinks
 sudo ln -s /etc/nginx/sites-available/proxy.conf /etc/nginx/sites-enabled/proxy.conf
 sudo rm /etc/nginx/sites-enabled/default  # symlink
 sudo nginx -t
+sudo systemctl reload nginx.service
+
