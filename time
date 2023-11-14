@@ -2,4 +2,4 @@
 # systemd-timesyncd
 timedatectl list-timezones
 sudo timedatectl set-timezone America/New_York
-
+timedatectl
