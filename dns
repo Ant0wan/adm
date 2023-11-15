@@ -13,3 +13,7 @@ sudo systemctl enable --now named.service
 sudo firewall-cmd --add-service=dns
 sudo firewall-cmd --add-service=dns --permanent
 dig @127.0.0.1 google.com   # dig @localhost google.com
+
+
+# Add zone
+cat /etc/named.conf
