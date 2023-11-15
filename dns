@@ -23,4 +23,5 @@ zone "example.com" IN {
 "
 sudo ls /var/named/
 sudo cp --preserve=ownership /var/named/named.localhost /var/named/example.com.zone
-
+#$TTL 1H
+#example.com.	A	203.0.113.30
