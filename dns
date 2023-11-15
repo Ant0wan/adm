@@ -21,3 +21,5 @@ zone "example.com" IN {
 	file "example.com.zone";
 };
 "
+sudo ls /var/named/
+
