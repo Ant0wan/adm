@@ -22,4 +22,5 @@ zone "example.com" IN {
 };
 "
 sudo ls /var/named/
+sudo cp --preserve=ownership /var/named/named.localhost /var/named/example.com.zone
 
