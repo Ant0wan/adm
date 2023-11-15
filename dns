@@ -6,4 +6,7 @@ cat /etc/named.conf
 # listen-on port 53 { 127.0.0.1; 192.168.0.17 };
 # listen-on port 53 { any };
 # allow-query { localhost; };
+# allow-query { localhost; 192.168.0.0/24 };
+# allow-query { any; };
+# recursion yes;
 
