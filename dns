@@ -9,4 +9,8 @@ cat /etc/named.conf
 # allow-query { localhost; 192.168.0.0/24 };
 # allow-query { any; };
 # recursion yes;
+sudo systemctl enable --now named.service
+sudo firewall-cmd --add-service=dns
+sudo firewall-cmd --add-service=dns --permanent
+dig @127.0.0.1 google.com   # dig @localhost google.com
 
