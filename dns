@@ -1,2 +1,2 @@
 sudo dnf install bind bind-utils
-
+man named.conf
