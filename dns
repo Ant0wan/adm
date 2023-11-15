@@ -1,2 +1,6 @@
 sudo dnf install bind bind-utils
 man named.conf
+ip address
+cat /etc/named.conf
+# listen-on port 53 { 127.0.0.1 }
+
