@@ -1,4 +1,5 @@
 ls /var/spool/mail/$USER
 sudo dnf install postfix
 sudo systemctl enbale --now postfix
-
+sendmail ${USER}@localhost <<< "Hello, I'm just testing email."
+cat /var/spool/mail/$USER
