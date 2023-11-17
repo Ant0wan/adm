@@ -8,3 +8,5 @@ sudo cat /etc/aliases
 sudo newaliases  # inform mail daemon
 sendmail advertising@localhost <<< "Hello Advertising, testing"
 cat /var/spool/mail/antoine
+# contact: aaron, antoine, john, jane
+
