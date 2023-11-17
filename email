@@ -1,0 +1,4 @@
+ls /var/spool/mail/$USER
+sudo dnf install postfix
+sudo systemctl enbale --now postfix
+
