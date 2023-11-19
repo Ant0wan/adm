@@ -12,3 +12,4 @@ ls /etc/dovecot/conf.d/
 sudo cat /etc/dovecot/conf.d/10-master.conf  # contains service ports
 # servive imap-login {
 #      port = 993
+sudo cat /etc/dovecot/conf.d/10-mail.conf
