@@ -5,4 +5,6 @@ sudo firewall-cmd --add-service=imaps
 sudo firewall-cmd --runtime-to-permanent
 sudo cat /etc/dovecot/dovecot.conf
 #protocols = imap pop3 lmtp submission
+#porotcols = imap   #enable imap and imaps
 #listen = *, ::
+#listen = 10.11.12.9
