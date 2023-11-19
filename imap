@@ -8,3 +8,5 @@ sudo cat /etc/dovecot/dovecot.conf
 #porotcols = imap   #enable imap and imaps
 #listen = *, ::
 #listen = 10.11.12.9
+ls /etc/dovecot/conf.d/
+
