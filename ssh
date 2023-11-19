@@ -1,6 +1,7 @@
+# Daemon
+man sshd_config
 sudo cat /etc/ssh/sshd_config
 #Port 988
-man sshd_config
 #PasswordAuthentication no
 #Match User aaron
 #	PasswordAuthentication yes
@@ -9,3 +10,12 @@ man sshd_config
 #ListenAddress 10.11.12.9
 #PermitRootLogin no
 #X11Forwarding no
+
+# Client
+cat .ssh/config
+#Host centos
+#	HostName 10.11.12.9
+#	Port 22
+#	User aaron
+chmod 600 .ssh/config
+ssh centos
