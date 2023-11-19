@@ -24,3 +24,4 @@ ls ~/.ssh
 cat *.pub
 ssh-copy-id aaron@10.11.12.9    # copy on the server .ssh/authorized_keys
 chmod 600 authorized_keys
+cat known_hosts
