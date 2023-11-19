@@ -16,4 +16,4 @@ sudo cat /etc/dovecot/conf.d/10-mail.conf
 # mail_location = mbox:~/mail:INBOX=/var/mail/%u
 sudo cat /etc/dovecot/conf.d/10-ssl.conf
 #ssl = required
-#ssl = yes
+#ssl = yes   # allow both imap and imaps
