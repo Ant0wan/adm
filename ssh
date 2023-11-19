@@ -28,3 +28,5 @@ cat ~/.ssh/known_hosts
 ssh-keygen -R 10.11.12.9  # Remove key in known hosts
 cat /etc/ssh/ssh_config
 # Port 22   # default if not specified
+cat /etc/ssh/ssh_config.d/99-mysettings.conf
+# Port 988
