@@ -14,3 +14,6 @@ sudo cat /etc/dovecot/conf.d/10-master.conf  # contains service ports
 #      port = 993
 sudo cat /etc/dovecot/conf.d/10-mail.conf
 # mail_location = mbox:~/mail:INBOX=/var/mail/%u
+sudo cat /etc/dovecot/conf.d/10-ssl.conf
+#ssl = required
+#ssl = yes
