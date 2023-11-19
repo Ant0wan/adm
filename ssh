@@ -1,4 +1,7 @@
 sudo cat /etc/ssh/sshd_config
 #Port 988
 man sshd_config
-
+#PasswordAuthentication
+#AddressFamily inet
+#AddressFamily inet6
+#ListenAddress 10.11.12.9
