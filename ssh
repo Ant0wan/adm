@@ -5,3 +5,4 @@ man sshd_config
 #AddressFamily inet
 #AddressFamily inet6
 #ListenAddress 10.11.12.9
+#PermitRootLogin no
