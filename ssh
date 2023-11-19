@@ -2,9 +2,10 @@ sudo cat /etc/ssh/sshd_config
 #Port 988
 man sshd_config
 #PasswordAuthentication no
+#Match User aaron
+#	PasswordAuthentication yes
 #AddressFamily inet
 #AddressFamily inet6
 #ListenAddress 10.11.12.9
 #PermitRootLogin no
 #X11Forwarding no
-
