@@ -25,3 +25,4 @@ cat *.pub
 ssh-copy-id aaron@10.11.12.9    # copy on the server .ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 cat ~/.ssh/known_hosts
+ssh-keygen -R 10.11.12.9  # Remove key in known hosts
