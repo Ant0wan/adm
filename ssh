@@ -1,3 +1,4 @@
 sudo cat /etc/ssh/sshd_config
-
+#Port 988
+man sshd_config
 
