@@ -19,3 +19,5 @@ cat .ssh/config
 #	User aaron
 chmod 600 .ssh/config
 ssh centos
+ssh-keygen
+
