@@ -1,0 +1,6 @@
+sudo dnf install dovecot
+sudo dnf enable --now dovecot
+sudo firewall-cmd --add-service=imap
+sudo firewall-cmd --add-service=imaps
+sudo firewall-cmd --runtime-to-permanent
+
