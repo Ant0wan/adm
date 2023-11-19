@@ -12,12 +12,14 @@ sudo cat /etc/ssh/sshd_config
 #X11Forwarding no
 
 # Client
-cat .ssh/config
+cat ~/.ssh/config
 #Host centos
 #	HostName 10.11.12.9
 #	Port 22
 #	User aaron
-chmod 600 .ssh/config
+chmod 600 ~/.ssh/config
 ssh centos
 ssh-keygen
-
+ls ~/.ssh
+cat *.pub
+ssh-copy-id aaron@10.11.12.9    # copy on the server .ssh/authorized_keys
