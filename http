@@ -9,3 +9,4 @@ sudo cat /etc/squid/squid.conf
 #http_access deny to_localhost   # do not access http services on squid server
 #acl youtube dstdomain .youtube.com
 #http_access deny youtube
+#http_access allow localnet !youtube   # trigger both rules instead of 1 line by line
