@@ -1,0 +1,5 @@
+sudo dnf install squid
+sudo systemctl enable --now squid
+sudo firewall-cmd --add-service=squid
+sudo firewall-cmd --runtime-to-permanent
+
