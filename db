@@ -1,0 +1,5 @@
+sudo dnf install mariadb-server
+sudo systemctl enable --now mariadb
+sudo firewall-cmd --add-service=mysql
+sudo firewall-cmd --add-service=mysql --permanent
+
