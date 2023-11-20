@@ -7,4 +7,4 @@ sudo cat /etc/squid/squid.conf
 #acl external src 203.0.113.0/24
 #http_access deny !Safe_ports   #rule enforcing above described rules
 #http_access deny to_localhost   # do not access http services on squid server
-
+#acl youtube dstdomain .youtube.com
