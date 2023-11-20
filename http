@@ -3,3 +3,4 @@ sudo systemctl enable --now squid
 sudo firewall-cmd --add-service=squid
 sudo firewall-cmd --runtime-to-permanent
 sudo cat /etc/squid/squid.conf
+
