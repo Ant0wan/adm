@@ -5,6 +5,7 @@ ls -l /mnt/
 lsblk
 sudo umount /mnt/
 lsblk
-sudo cat /etc/fstab
+sudo cat /etc/fstab   # mount at boot time
 # <file system>  <mount point>  <type>  <options>  <dump>  <pass>
 /dev/sda1 /mnt/ xfs defaults 0 0
+sudo systemctl daemon-reload   # reread the fstab without reboot
