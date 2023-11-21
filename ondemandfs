@@ -9,4 +9,5 @@ sudo systemctl reload nfs-server.service
 sudo cat /etc/auto.master
 # /shares/ /etc/auto.shares --timeout=400
 sudo cat /etc/auto.shares
-# mynetworkshare -fstype=auto 127.0.0.1:/etc
+# mynetworkshare -fstype=auto,ro 127.0.0.1:/etc
+# mynetworkshare -fstype=auto,ro nfs1.example.com:/etc
