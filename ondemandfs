@@ -1,0 +1,3 @@
+# On Demand Mounting
+sudo dnf install autofs
+sudo systemctl enable --now autofs.service
