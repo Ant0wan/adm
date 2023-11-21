@@ -22,4 +22,5 @@ sudo mount --options ro,noexec,nosuid /dev/sda1 /mnt
 sudo mount --options remount,rw,noexec,nosuid /dev/sda1 /mnt
 sudo umount /mnt
 sudo mount --options allocasize=32K /dev/sda2 /mybackups  # xfs specific option: allocsize
-
+sudo cat /etc/fstab
+# /dev/sda2 /mybackups xfs ro,noexec 0 2
