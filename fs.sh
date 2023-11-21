@@ -14,4 +14,8 @@ sudo mkfs.ext4 -L "BackupVolume" -N 500000 /dev/sda2
 sudo tune2fs -l /dev/sda2
 sudo tune2fs -L "SecondFS" /dev/sda2
 
-
+findmnt
+findmnt --type xfs,ext4
+sudo mount --options ro /dev/sda1 /mnt
+sudo umount /mnt
+sudo mount --options ro,noexec,nosuid /dev/sda1 /mnt
