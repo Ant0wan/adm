@@ -15,5 +15,12 @@ sudo cat /etc/auto.shares
 sudo systemctl reload autofs
 ls /shares/
 ls /shares/mynetworkshare/
+
 sudo cat /etc/auto.master
 #/ /etc/auto.shares --timeout=400
+sudo cat /etc/auto.shares
+#/mynetworkshare -fstype=auto 127.0.0.1:/etc
+#/localfiles/myext4files -fstype=auto :/dev/sda2
+sudo systemctl reload autofs
+ls /mynetworkshare/
+ls /localfiles/myext4files/
