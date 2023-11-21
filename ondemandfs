@@ -6,3 +6,7 @@ sudo systemctl enable --now nfs-server.service
 sudo cat /etc/exports
 # /etc 127.0.0.1(ro)
 sudo systemctl reload nfs-server.service
+sudo cat /etc/auto.master
+# /shares/ /etc/auto.shares --timeout=400
+sudo cat /etc/auto.shares
+# mynetworkshare -fstype=auto 127.0.0.1:/etc
