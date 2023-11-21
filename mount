@@ -5,3 +5,6 @@ ls -l /mnt/
 lsblk
 sudo umount /mnt/
 lsblk
+sudo cat /etc/fstab
+# <file system>  <mount point>  <type>  <options>  <dump>  <pass>
+/dev/sda1 /mnt/ xfs defaults 0 0
