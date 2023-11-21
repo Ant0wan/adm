@@ -12,3 +12,8 @@ sudo cat /etc/auto.shares
 # mynetworkshare -fstype=auto,ro 127.0.0.1:/etc
 # mynetworkshare -fstype=auto,ro nfs1.example.com:/etc
 # myext4files -fstype=auto :/dev/sda2
+sudo systemctl reload autofs
+ls /shares/
+ls /shares/mynetworkshare/
+sudo cat /etc/auto.master
+#/ /etc/auto.shares --timeout=400
