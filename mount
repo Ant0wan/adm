@@ -1,3 +1,7 @@
 ls /mnt/
 sudo mount /dev/sda1 /mnt/
 sudo touch /mnt/testfile
+ls -l /mnt/
+lsblk
+sudo umount /mnt/
+lsblk
