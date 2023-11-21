@@ -1,3 +1,8 @@
 # On Demand Mounting
 sudo dnf install autofs
 sudo systemctl enable --now autofs.service
+sudo dnf install nfs-utils
+sudo systemctl enable --now nfs-server.service
+sudo cat /etc/exports
+# /etc 127.0.0.1(ro)
+sudo systemctl reload nfs-server.service
