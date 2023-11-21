@@ -19,3 +19,7 @@ findmnt --type xfs,ext4
 sudo mount --options ro /dev/sda1 /mnt
 sudo umount /mnt
 sudo mount --options ro,noexec,nosuid /dev/sda1 /mnt
+sudo mount --options remount,rw,noexec,nosuid /dev/sda1 /mnt
+sudo umount /mnt
+sudo mount --options allocasize=32K /dev/sda2 /mybackups  # xfs specific option: allocsize
+
