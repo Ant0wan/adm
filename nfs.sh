@@ -30,3 +30,5 @@ sudo apt install nfs-kernel-server
 sudo cat /etc/exports
 sudo exportfs -r  #re-export
 sudo exportfs -v  #show active shares
+sudo apt install nfs-common
+sudo mount 192.168.1.23:/etc /home/antoine/remoteetc
