@@ -32,3 +32,5 @@ sudo exportfs -r  #re-export
 sudo exportfs -v  #show active shares
 sudo apt install nfs-common
 sudo mount 192.168.1.23:/etc /mnt
+sudo cat /etc/fstab
+#192.168.1.23:/etc /mnt nfs defaults 0 0
