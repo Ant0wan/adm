@@ -24,3 +24,9 @@ sudo cat /etc/auto.shares
 sudo systemctl reload autofs
 ls /mynetworkshare/
 ls /localfiles/myext4files/
+
+# Ubuntu NFS
+sudo apt install nfs-kernel-server
+sudo cat /etc/exports
+sudo exportfs -r  #re-export
+sudo exportfs -v  #show active shares
