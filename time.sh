@@ -1,7 +1,7 @@
 # NTP
 # systemd-timesyncd
 timedatectl list-timezones
-sudo timedatectl set-timezone America/New_York
+sudo timedatectl set-timezone America/Guadeloupe
 timedatectl
 sudo apt install systemd-timesyncd
 timedatectl set-ntp true
